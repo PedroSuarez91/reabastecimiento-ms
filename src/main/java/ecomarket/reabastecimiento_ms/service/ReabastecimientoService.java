@@ -36,7 +36,7 @@ public class ReabastecimientoService {
         }
 
         for (ItemReabastecimiento item : reabastecimiento.getItems()) {
-            String urlProducto = "http://localhost:8xxx/api/v1/productos/" + item.getIdProducto();
+            String urlProducto = "http://localhost:8090/api/v1/productos/" + item.getIdProducto();
             ProductoDTO producto = restTemplate.getForObject(urlProducto, ProductoDTO.class);
             if (producto == null) {
                 throw new RuntimeException("Producto no encontrado: " + item.getIdProducto());
