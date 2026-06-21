@@ -11,6 +11,6 @@ public class ProductoDTO {
     private String descripcion;
     private String marca;
     private String precioUnitario;
-    private boolean estado;
+    private Boolean estado;
 
 }
