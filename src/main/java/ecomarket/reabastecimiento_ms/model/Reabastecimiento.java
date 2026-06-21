@@ -22,9 +22,9 @@ public class Reabastecimiento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idPedidoReabastecimiento;
+    private Long idPedidoReabastecimiento;
 
-    private long idProveedor;
+    private Long idProveedor;
 
     private LocalDate fecha;
 
