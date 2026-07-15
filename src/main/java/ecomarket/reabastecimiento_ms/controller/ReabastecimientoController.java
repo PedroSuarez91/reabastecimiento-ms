@@ -45,6 +45,8 @@ public class ReabastecimientoController {
             return new ResponseEntity<>(nuevo, HttpStatus.CREATED);
 
         } catch (Exception e) {
+            System.out.println("Error al crear reabastecimiento: " + e.getMessage());
+            e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
     }

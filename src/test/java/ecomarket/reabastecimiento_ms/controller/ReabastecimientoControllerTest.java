@@ -31,7 +31,7 @@ public class ReabastecimientoControllerTest {
         @Autowired
         private MockMvc mockMvc;
 
-        @SuppressWarnings("removal")
+        
         @MockitoBean
         private ReabastecimientoService reabastecimientoService;
 

@@ -1,9 +1,9 @@
 package ecomarket.reabastecimiento_ms.controller;
 
-import tools.jackson.databind.ObjectMapper;
+
 import ecomarket.reabastecimiento_ms.model.ProductoDTO;
 import ecomarket.reabastecimiento_ms.model.ProveedorDTO;
-import ecomarket.reabastecimiento_ms.model.Reabastecimiento;
+
 import ecomarket.reabastecimiento_ms.repository.ReabastecimientoRepository;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -36,11 +36,11 @@ class ReabastecimientoControllerIT {
     @Autowired
     private ReabastecimientoRepository reabastecimientoRepository;
 
-    @SuppressWarnings("removal")
+    
     @MockitoBean
     private RestTemplate restTemplate;
 
-    private ObjectMapper objectMapper = new ObjectMapper();
+    
 
     @BeforeEach
     void cleanDb() {
